@@ -10,10 +10,16 @@
                     Tambah
                 </h2>
             </div>
+            <!-- Page title actions -->
+            <div class="col-auto ms-auto d-print-none">
+                <div class="btn-list">
+                    <inertia-link href="/posts" class="btn btn-primary">Kembali</inertia-link>
+                </div>
+            </div>
         </div>
-        
+
         <div class="page-body">
-           Tambah
+            Tambah
         </div>
     </div>
 </template>
@@ -32,13 +38,8 @@ export default {
 
     //register Link di component
     components: {
-        // 'inertia-link': Link
+        'inertia-link': Link
     },
-
-    //props
-    props: {
-        posts: Array // <- nama props yang dibuat di controller saat parsing data
-    }
 }
 </script>
 
